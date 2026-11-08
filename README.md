@@ -1,3 +1,5 @@
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=OluwadareLab.UGR-HiC)
+
 # UGR-HiC: Uncertainty-Guided Residual Refinement for Structure-Preserving Spatiotemporal Hi-C Forecasting
 
 <p align="center">
@@ -6,7 +8,7 @@
 
 UGR-HiC extends [HiCForecast](https://github.com/OluwadareLab/HiCForecast) with seeded-ensemble uncertainty estimation, sparse graph diffusion, and uncertainty-guided residual refinement for spatiotemporal Hi-C forecasting. This repository contains the notebooks used for the baseline, UGR-HiC experiments, and structure-aware evaluation.
 
-## Repository Structure
+## 📂 Repository Structure
 
 ```text
 UGR-HiC/
@@ -18,7 +20,7 @@ UGR-HiC/
 └── README.md
 ```
 
-## Installation and Data
+## 🛠️ Installation and Data
 
 Run the notebooks in **Google Colab**, using a Google Drive account with enough space for the downloaded Hi-C archive and generated results. Select **Runtime → Change runtime type → GPU** before running the main experiments.
 
@@ -46,7 +48,7 @@ MyDrive/
 
 The manuscript reports experiments on five datasets at **40-kb resolution**, using `chr16` and `chr19`. The setup notebook extracts available dataset folders numbered 1–6 from the source archive.
 
-## Usage
+## 🚀 Usage
 
 ### 1. Run `main.ipynb`
 
@@ -75,7 +77,7 @@ CHROMOSOME = "chr16"
 
 For another dataset or chromosome, set these paths to the corresponding completed experiment. TADCompare selects the most recently modified `run_*` folder under `RUNS_ROOT` and loads the saved baseline, ensemble, graph-diffusion, and UGR-HiC predictions. The notebook installs **R, PRIMME, TADCompare (Bioconductor), and the required R packages** before evaluation.
 
-## Output
+## 📊 Output
 
 All predictions, checkpoints, metrics, figures, and logs are saved automatically to Google Drive under:
 
@@ -107,31 +109,31 @@ runs/
 
 Each experiment writes to its own subdirectory. TADCompare creates a timestamped folder in the selected run.
 
-## Dependencies
+## 📦 Dependencies
 
 Python packages are listed in [`requirements.txt`](requirements.txt) and installed by `main.ipynb`. GenomeDISCO and TADCompare use the separate installation steps documented above.
 
-### Developed By
+### Developer
 
-**Abdullah Al Naseeh Chowdhury**  
-B.Sc. (Engineering) in Computer Science and Engineering  
+**Abdullah Al Naseeh Chowdhury**   
 Department of Computer Science and Engineering, University of North Texas  
 Email: [AbdullahAlNaseehChowdhury@my.unt.edu](mailto:AbdullahAlNaseehChowdhury@my.unt.edu)
 
 ## Contact
 
 **Dr. Oluwatosin Oluwadare**  
-Associate Professor, Department of Computer Science and Engineering
-University of North Texas  
+Department of Computer Science and Engineering, University of North Texas  
 Email: [Oluwatosin.Oluwadare@unt.edu](mailto:Oluwatosin.Oluwadare@unt.edu)
 
 ### [OluwadareLab, University of North Texas](https://oluwadarelab.com/)
 
-<p align="center">
-  <img src="https://webassets.unt.edu/assets/branding/unt-mobile-logo.svg" alt="University of North Texas" width="180">
-</p>
+<div style="background-color: black; padding: 20px; text-align: start; border-radius: 8px;">
+  <img src="https://webassets.unt.edu/assets/branding/unt-mobile-logo.svg" 
+       alt="UNT" 
+       style="max-width: 50%; height: auto; margin-top: 10px;">
+</div>
 
-## License
+## ⚖️ License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
